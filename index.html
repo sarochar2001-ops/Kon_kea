@@ -116,7 +116,7 @@ const MILE = {
   25: '25 ครั้งแล้ว ว่างมากเลยนะเรา 555 ไปกินอะไรอร่อย ๆ กัน 🍜',
   50: '50 ครั้ง!! ขอบคุณที่ทนจิ้มจนสุดทาง รักนะพี่สาวคนสวย ♡'
 };
-let S={name:'ที่รัก',msgs:MSG.join('\n')},n=0,opened=false,bag=[];
+let S={name:'คนแก่',msgs:MSG.join('\n')},n=0,opened=false,bag=[];
 try{const d=JSON.parse(localStorage.getItem(K));if(d&&d.name&&d.msgs)S=d}catch(e){}
 const list=()=>S.msgs.split('\n').map(x=>x.trim()).filter(Boolean);
 function save(){try{localStorage.setItem(K,JSON.stringify(S));return true}catch(e){return false}}
